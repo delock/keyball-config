@@ -1,8 +1,8 @@
 #define DEF     0
 #define NAV     1
 #define MOUSE   2
-#define SCROLL  5
-#define SNIPE   6
+#define SCROLL  3
+#define AUTOMOUSE 4
 
 #include <behaviors/mouse_keys.dtsi>
 #include <behaviors.dtsi>
@@ -85,26 +85,6 @@
             >;
         };
 
-        dummy_layer1 {
-            label = "DUMMY1";
-            bindings = <
-&trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans                          &trans
-            >;
-        };
-
-        dummy_layer2 {
-            label = "DUMMY2";
-            bindings = <
-&trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans                          &trans
-            >;
-        };
-
         scroll_layer {
             label = "SCROLL";
             bindings = <
@@ -115,8 +95,8 @@
             >;
         };
 
-        snipe_layer {
-            label = "SNIPE";
+        automouse_layer {
+            label = "AUTOMOUSE";
             bindings = <
 &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans

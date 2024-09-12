@@ -1,8 +1,8 @@
 #define DEFAULT 0
 #define NUM     1
 #define MOUSE   2
-#define SCROLL  3
-#define SNIPE   4
+#define SCROLL  5
+#define SNIPE   6
 
 #include <behaviors/mouse_keys.dtsi>
 #include <behaviors.dtsi>
@@ -80,6 +80,26 @@
 &none           &none           &none         &none      &mo 4                   &none          &mkp LCLK  &lt 3 MCLK  &mkp RCLK  &none
 &none           &none           &none         &none      &none                   &none          &none      &none       &none      &none
 &trans          &trans          &trans        &trans     &trans  &trans  &trans  &trans                                       &trans
+            >;
+        };
+
+        dummy_layer1 {
+            label = "DUMMY1";
+            bindings = <
+&trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans                          &trans
+            >;
+        };
+
+        dummy_layer2 {
+            label = "DUMMY2";
+            bindings = <
+&trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans                          &trans
             >;
         };
 

@@ -1,4 +1,4 @@
-#define DEFAULT 0
+#define DEF     0
 #define NUM     1
 #define MOUSE   2
 #define SCROLL  5

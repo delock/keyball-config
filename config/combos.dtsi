@@ -61,7 +61,7 @@
 #define COMBO_TERM 50
 
 // number cluster
-ZMK_COMBO(one_,  &kp N1,        LT4 LM4,     DEFAULT, COMBO_TERM)
+ZMK_COMBO(one_,  &kp N1,        LT4 LM4,     DEF, COMBO_TERM)
 ZMK_COMBO(two_,  &kp N2,        LT3 LM3,     DEF, COMBO_TERM)
 ZMK_COMBO(three, &kp N3,        LM2 LT2,     DEF, COMBO_TERM)
 ZMK_COMBO(four,  &kp N4,        LM1 LT1,     DEF, COMBO_TERM)

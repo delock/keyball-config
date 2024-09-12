@@ -1,5 +1,5 @@
 #define DEF     0
-#define NUM     1
+#define NAV     1
 #define MOUSE   2
 #define SCROLL  5
 #define SNIPE   6
@@ -64,7 +64,7 @@
         };
 
         number_layer {
-            label = "NUM";
+            label = "NAV";
             bindings = <
 &trans        &trans        &trans        &trans        &trans             &kp LC(C)     &kp PG_UP     &kp HOME      &kp END       &kp LC(V)
 &trans        &trans        &trans        &trans        &trans             &kp LEFT      &kp DOWN      &kp UP        &kp RIGHT     &kp PSCRN

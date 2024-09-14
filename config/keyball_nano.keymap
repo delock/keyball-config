@@ -15,9 +15,9 @@
 #include "combos.dtsi"
 
 &lt {
-    tapping-term-ms = <150>;
+    tapping-term-ms = <100>;
     flavor = "balanced";
-    quick-tap-ms = <150>;
+    quick-tap-ms = <100>;
 };
 
 &mt {

@@ -22,7 +22,7 @@
 
 / {
     behaviors {
-        lmc: layer_tap {
+        lmc: layer_mouse_click {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "tap-preferred";

@@ -15,7 +15,7 @@
 #include "combos.dtsi"
 
 &lt {
-    tapping-term-ms = <240>;
+    tapping-term-ms = <200>;
     flavor = "balanced";
     quick-tap-ms = <150>;
 };
@@ -63,13 +63,6 @@
 &kp LSHFT  &mo 3     &kp LGUI
                                &kp LALT  &kp LSHFT  &kp LCTRL
                                                                            &kp LGUI  &lt 1 SPACE                          &mo 2
-            >;
-            bindings = <
-                &lt 2 SLASH {
-                    hold-tap {
-                        tapping-term-ms = <100>; // Custom tap-hold term for this key
-                    };
-                }
             >;
         };
 

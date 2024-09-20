@@ -3,7 +3,7 @@
 #define MOUSE   2
 #define SCROLL  3
 #define AUTOMOUSE 4
-#define NUMBER 5
+#define NUM 5
 
 #include <behaviors/mouse_keys.dtsi>
 #include <behaviors.dtsi>

@@ -80,7 +80,7 @@
             >;
         };
 
-        number_layer {
+        navigation_layer {
             label = "NAV";
             bindings = <
 &trans        &trans        &trans        &trans        &trans             &kp LC(C)     &kp PG_UP     &kp HOME      &kp END       &kp LC(V)

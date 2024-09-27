@@ -3,7 +3,6 @@
 #define MOUSE   2
 #define SCROLL  3
 #define AUTOMOUSE 4
-#define NUM 5
 
 #include <behaviors/mouse_keys.dtsi>
 #include <behaviors.dtsi>
@@ -76,16 +75,16 @@
 &kp Z      &kp X     &kp C     &kp V    &kp B                              &kp N            &kp M  &kp COMMA  &kp DOT  &lt 2 SLASH
 &kp LSHFT  &mo 3     &kp LGUI
                                &kp LALT  &kp LSHFT  &kp LCTRL
-                                                                           &mo 5  &lt 1 SPACE                          &mo 2
+                                                                           &kp LGUI         &lt 1 SPACE                &mo 2
             >;
         };
 
         navigation_layer {
             label = "NAV";
             bindings = <
-&trans        &trans        &trans        &trans        &trans             &kp LC(C)     &kp PG_UP     &kp HOME      &kp END       &kp LC(V)
-&trans        &trans        &trans        &trans        &trans             &kp LEFT      &kp DOWN      &kp UP        &kp RIGHT     &kp PSCRN
-&trans        &trans        &trans        &trans        &trans             &kp LC(X)     &kp PG_DN     &kp C_VOL_DN  &kp C_VOL_UP  &kp C_AL_CALC
+&kp N1        &kp N2        &kp N3        &kp N4        &kp N5             &kp LC(C)     &kp PG_UP     &kp HOME      &kp END       &kp LC(V)
+&kp N6        &kp N7        &kp N8        &kp N9        &kp N0             &kp LEFT      &kp DOWN      &kp UP        &kp RIGHT     &kp PSCRN
+&kp PLUS      &kp MINUS     &kp STAR      &kp SLASH     &kp DOT            &kp LC(X)     &kp PG_DN     &kp C_VOL_DN  &kp C_VOL_UP  &kp C_AL_CALC
 &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2
                                           &trans        &trans   &trans
                                                                                &trans  &trans                                      &trans
@@ -96,7 +95,7 @@
             label = "MOUSE";
             bindings = <
 &trans          &trans          &trans        &trans     &trans                  &none          &none      &none       &none      &none
-&trans          &trans          &trans        &trans     &trans                  &none          &mkp LCLK  &lmc 3 MCLK  &mkp RCLK  &none
+&trans          &trans          &trans        &trans     &trans                  &none          &mkp LCLK  &lmc 3 MCLK  &mkp RCLK &none
 &trans          &trans          &trans        &trans     &trans                  &none          &none      &none       &kp QMARK  &none
 &bt BT_SEL 3    &bt BT_SEL 4    &bt BT_CLR       &trans     &trans  &trans  &trans  &trans                                        &trans
             >;
@@ -119,16 +118,6 @@
 &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans                          &trans
-            >;
-        };
-
-        number_layer {
-            label = "NUM";
-            bindings = <
-&trans  &trans  &trans  &trans  &trans                  &kp N7  &kp N8  &kp N9  &kp N0    &kp PLUS
-&trans  &trans  &trans  &trans  &trans                  &kp N4  &kp N5  &kp N6  &kp DOT   &kp MINUS
-&trans  &trans  &trans  &trans  &trans                  &kp N1  &kp N2  &kp N3  &kp SLASH &kp STAR
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans                            &kp EQUAL
             >;
         };
     };
